@@ -12,7 +12,7 @@ public class Category {
 	private String name;
 	private String description;
 	private String imageUrl;
-	private boolean active;
+	private boolean active = true;
 
 	public int getId() {
 		return id;

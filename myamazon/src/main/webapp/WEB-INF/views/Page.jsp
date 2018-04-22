@@ -52,6 +52,8 @@
 	<c:if test="${ userClickAbout == true}">
 		<%@include file="about.jsp"%>
 	</c:if>
+	
+	
 
 	<!-- Contact Us -->
 	<c:if test="${ userClickContact == true}">
