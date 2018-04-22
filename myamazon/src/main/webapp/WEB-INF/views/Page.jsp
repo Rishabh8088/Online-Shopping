@@ -23,7 +23,12 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Amazon</title>
+<title>Amazon- ${title }</title>
+
+<script>
+	windows.menu = '${title}';
+</script>
+
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -42,12 +47,12 @@
 	<c:if test="${ userClickHome == true}">
 		<%@include file="home.jsp"%>
 	</c:if>
-	
+
 	<!-- About page -->
 	<c:if test="${ userClickAbout == true}">
 		<%@include file="about.jsp"%>
 	</c:if>
-	
+
 	<!-- Contact Us -->
 	<c:if test="${ userClickContact == true}">
 		<%@include file="contact.jsp"%>
@@ -62,6 +67,9 @@
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="${js}/bootstrap.min.js"></script>
+
+	<!-- self  JavaScript -->
+	<script src="${js}/myapp.js"></script>
 
 </body>
 
